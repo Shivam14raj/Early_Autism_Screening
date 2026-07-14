@@ -312,7 +312,7 @@ Additional documentation:
 
 # 👨‍💻 Author
 
-**Shivam**
+**Shivam Raj**
 
 ---
 
