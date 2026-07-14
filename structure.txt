@@ -85,5 +85,7 @@ autism-detection-ml-system/
 python -m venv venv
 venv\Scripts\activate 
 
+to install all the same dependencies: pip freeze > requirements.txt
+other will do : pip install -r requirements.txt 
 
 first EDA -> Data preprocessing

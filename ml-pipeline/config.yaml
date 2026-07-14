@@ -1,0 +1,20 @@
+paths:
+  data_path: "data/raw/train.csv"
+
+  model_path: "models/autism_model.pkl"
+
+  encoder_path: "models/encoders.pkl"
+
+
+training:
+  test_size: 0.2
+
+  random_state: 42
+
+
+model:
+  n_estimators: 50
+
+  max_depth: 20
+
+  bootstrap: false 
