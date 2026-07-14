@@ -1,0 +1,89 @@
+autism-detection-ml-system/
+│
+├── 📁 backend/                      # FastAPI / Flask (ML API layer)
+│   ├── app/
+│   │   ├── main.py                 # API entry point
+│   │   ├── routes/
+│   │   │   └── predict.py          # /predict endpoint
+│   │   ├── schemas/
+│   │   │   └── request.py          # input validation (Pydantic)
+│   │   ├── services/
+│   │   │   ├── model_service.py    # load + predict logic
+│   │   │   └── preprocessing.py    # preprocessing pipeline
+│   │   ├── utils/
+│   │   │   └── helpers.py
+│   │   └── config.py               # paths, settings
+│   │     
+│   ├── models/
+│   │   └── autism_model.pkl        # trained model
+│   │
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+│
+├── 📁 ml_pipeline/                 # training pipeline (Colab → here)
+│   ├── data/
+│   │   ├── raw/                   # original dataset
+│   │   ├── processed/             # cleaned dataset
+│   │
+│   ├── notebooks/                 # Colab experiments (optional)
+│   │   └── experiment.ipynb
+│   │
+│   ├── src/
+│   │   ├── data_preprocessing.py
+│   │   ├── feature_engineering.py
+│   │   ├── train.py               # model training script
+│   │   ├── evaluate.py            # accuracy, precision, recall
+│   │   └── save_model.py
+│   │
+│   ├── models/                   # trained models output
+│   │   └── autism_model.pkl
+│   │
+│   ├── requirements.txt
+│   └── config.yaml
+│
+│
+├── 📁 frontend/                   # React UI (user interface)
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── Form.jsx           # questionnaire UI
+│   │   ├── pages/
+│   │   │   └── Home.jsx
+│   │   ├── services/
+│   │   │   └── api.js             # backend API calls
+│   │   ├── App.js
+│   │   └── index.js
+│   │
+│   ├── package.json
+│   └── .env
+│
+│
+├── 📁 deployment/
+│   ├── docker-compose.yml         # full system orchestration
+│   ├── nginx.conf                 # reverse proxy (optional)
+│   └── cloud_notes.md            # AWS / Render / Vercel guide
+│
+│
+├── 📁 docs/
+│   ├── architecture.md           # system design explanation
+│   ├── api_docs.md               # endpoints explanation
+│   └── ml_report.md              # model performance report
+│
+│
+├── 📁 tests/
+│   ├── test_api.py
+│   ├── test_model.py
+│   └── test_preprocessing.py
+│
+│
+├── .gitignore
+├── README.md
+└── LICENSE
+
+
+python -m venv venv
+venv\Scripts\activate 
+
+
+first EDA -> Data preprocessing
