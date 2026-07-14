@@ -1,4 +1,4 @@
-# Early Autism Detection ML System 🧠
+# Early Autism Screening ML System 🧠
 
 An end-to-end machine learning pipeline for early autism screening using machine learning techniques. The project focuses on data preprocessing, feature engineering, model training, hyperparameter optimization, evaluation, and prediction using a trained classification model.
 
