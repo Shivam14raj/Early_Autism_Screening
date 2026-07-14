@@ -234,7 +234,7 @@ models/
 ## Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Shivam14raj/Early_Autism_Screening.git
 
 cd ml-pipeline
 ```
