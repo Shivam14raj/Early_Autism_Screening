@@ -54,13 +54,13 @@ sample_data = {
 
     "A1_Score": 1,
     "A2_Score": 1,
-    "A3_Score": 1,
+    "A3_Score": 0,
     "A4_Score": 1,
-    "A5_Score": 1,
+    "A5_Score": 0,
     "A6_Score": 1,
-    "A7_Score": 1,
+    "A7_Score": 0,
     "A8_Score": 1,
-    "A9_Score": 1,
+    "A9_Score": 0,
     "A10_Score": 1,
 
     "age": 10,
@@ -77,7 +77,7 @@ sample_data = {
 
     "used_app_before": "no",
 
-    "result": 8,
+    "result": 6,
 
     "relation": "Others"
 
